@@ -73,21 +73,24 @@ export default useFetch;`,
       <section className="relative bg-gradient-to-br from-theme-purple/90 via-theme-indigo/80 to-theme-blue/90 text-white">
         <div className="container mx-auto px-4 py-24 md:py-32">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-heading">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent drop-shadow-lg">
               Adventures in Travel & Code
             </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
+            <h2 className="text-2xl md:text-3xl font-light mb-6 text-white/90 italic">
+              —Aarav Garhwal
+            </h2>
+            <p className="text-xl md:text-2xl mb-8 text-white drop-shadow">
               Welcome to my personal space where I share beautiful travel moments and 
               useful code snippets from my journey as a developer and explorer.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/travel">
-                <Button size="lg" variant="secondary" className="bg-white/10 backdrop-blur-sm text-white hover:bg-white/20">
+                <Button size="lg" variant="secondary" className="bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 shadow-lg">
                   Explore Photos
                 </Button>
               </Link>
               <Link to="/code">
-                <Button size="lg" variant="outline" className="bg-transparent border-white/40 text-white hover:bg-white/10 backdrop-blur-sm">
+                <Button size="lg" variant="outline" className="bg-transparent border-white/40 text-white hover:bg-white/10 backdrop-blur-sm shadow-lg">
                   Browse Code Snippets
                 </Button>
               </Link>
@@ -97,18 +100,39 @@ export default useFetch;`,
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
       </section>
 
+      {/* Featured Image Section */}
+      <section className="container mx-auto px-4 py-16 gradient-bg">
+        <div className="flex flex-col items-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center bg-gradient-to-r from-primary via-accent to-theme-teal bg-clip-text text-transparent drop-shadow">
+            Featured Image
+          </h2>
+          <p className="text-lg text-center max-w-2xl mx-auto text-white/80 mb-8">
+            Capturing moments that inspire both travel and creativity
+          </p>
+        </div>
+        <div className="max-w-5xl mx-auto overflow-hidden rounded-lg shadow-2xl border border-white/10">
+          <img 
+            src="/lovable-uploads/7d17cb9e-1f21-4b07-8657-b82c0f77bf91.jpg" 
+            alt="Large featured landscape" 
+            className="w-full object-cover"
+          />
+        </div>
+      </section>
+
       {/* Featured Profile Image */}
       <section className="container mx-auto px-4 py-16 gradient-bg">
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl font-bold mb-8 text-center gradient-heading">Aarav Garhwal</h2>
-          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg border border-white/10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent drop-shadow">
+            Aarav Garhwal
+          </h2>
+          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg shadow-2xl border border-white/10">
             <img 
               src="/lovable-uploads/b367f678-09f7-433f-8dab-52a488f5ff8c.png" 
               alt="Aarav Garhwal with headphones" 
               className="w-full object-cover"
             />
           </div>
-          <p className="mt-6 text-lg text-center max-w-2xl mx-auto text-muted-foreground">
+          <p className="mt-6 text-lg text-center max-w-2xl mx-auto text-white/90">
             Explorer, coder, and music enthusiast. Join me on my journey through the worlds of technology and travel.
           </p>
         </div>

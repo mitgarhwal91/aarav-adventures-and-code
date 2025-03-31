@@ -5,37 +5,37 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
+    --background: 222 47% 8%; /* Darkened background */
     --foreground: 210 40% 98%;
 
-    --card: 222 47% 9%;
+    --card: 222 47% 6%; /* Darkened card */
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 11%;
+    --popover: 222 47% 9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 199 89% 48%;
+    --primary: 199 89% 60%; /* Brightened primary */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 217 33% 17%;
+    --secondary: 217 33% 15%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 20% 75%; /* Brightened muted foreground */
 
-    --accent: 262 83% 58%;
+    --accent: 262 83% 65%; /* Brightened accent */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 33% 17%;
+    --border: 217 33% 20%; /* Brightened border */
     --input: 217 33% 17%;
     --ring: 199 89% 48%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 222 47% 13%;
+    --sidebar-background: 222 47% 10%;
     --sidebar-foreground: 240 5% 85%;
     --sidebar-primary: 240 6% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -53,6 +53,10 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
   }
 
   .code-block {
@@ -85,10 +89,38 @@
   }
   
   .gradient-heading {
-    @apply bg-gradient-to-r from-primary via-accent to-theme-teal bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent drop-shadow;
   }
   
   .gradient-bg {
     @apply bg-gradient-to-br from-background via-card to-secondary;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-xl;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@layer components {
+  .hero-text {
+    @apply font-bold tracking-tight drop-shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-primary via-theme-blue to-theme-teal bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-theme-purple via-accent to-theme-blue bg-clip-text text-transparent;
   }
 }
