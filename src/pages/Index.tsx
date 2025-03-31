@@ -97,6 +97,23 @@ export default useFetch;`,
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
       </section>
 
+      {/* Featured Profile Image - New Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="flex flex-col items-center">
+          <h2 className="text-3xl font-bold mb-8 text-center">Aarav Garhwal</h2>
+          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="/lovable-uploads/b367f678-09f7-433f-8dab-52a488f5ff8c.png" 
+              alt="Aarav Garhwal with headphones" 
+              className="w-full object-cover"
+            />
+          </div>
+          <p className="mt-6 text-lg text-center max-w-2xl mx-auto text-muted-foreground">
+            Explorer, coder, and music enthusiast. Join me on my journey through the worlds of technology and travel.
+          </p>
+        </div>
+      </section>
+
       {/* Featured Travel Photos */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex justify-between items-center mb-8">
