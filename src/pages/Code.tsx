@@ -14,7 +14,7 @@ import {
 
 const Code = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [languageFilter, setLanguageFilter] = useState('');
+  const [languageFilter, setLanguageFilter] = useState('all');
 
   // Sample data
   const codeSnippets = [
@@ -129,7 +129,7 @@ process_image('travel_photo.jpg', 'travel_photo_processed.jpg')`,
   const filteredSnippets = codeSnippets.filter(snippet => 
     (snippet.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     snippet.description.toLowerCase().includes(searchTerm.toLowerCase())) &&
-    (languageFilter === '' || snippet.language === languageFilter)
+    (languageFilter === 'all' || snippet.language === languageFilter)
   );
 
   return (
@@ -162,7 +162,7 @@ process_image('travel_photo.jpg', 'travel_photo_processed.jpg')`,
                 <SelectValue placeholder="All Languages" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Languages</SelectItem>
+                <SelectItem value="all">All Languages</SelectItem>
                 {languages.map((language) => (
                   <SelectItem key={language} value={language}>{language}</SelectItem>
                 ))}
@@ -173,9 +173,9 @@ process_image('travel_photo.jpg', 'travel_photo_processed.jpg')`,
             variant="outline"
             onClick={() => {
               setSearchTerm('');
-              setLanguageFilter('');
+              setLanguageFilter('all');
             }}
-            disabled={!searchTerm && !languageFilter}
+            disabled={!searchTerm && languageFilter === 'all'}
           >
             Clear Filters
           </Button>
@@ -202,7 +202,7 @@ process_image('travel_photo.jpg', 'travel_photo_processed.jpg')`,
               variant="link" 
               onClick={() => {
                 setSearchTerm('');
-                setLanguageFilter('');
+                setLanguageFilter('all');
               }}
               className="mt-2"
             >
