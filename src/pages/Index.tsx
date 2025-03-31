@@ -70,10 +70,10 @@ export default useFetch;`,
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/90 to-accent/90 text-white">
+      <section className="relative bg-gradient-to-br from-theme-purple/90 via-theme-indigo/80 to-theme-blue/90 text-white">
         <div className="container mx-auto px-4 py-24 md:py-32">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-heading">
               Adventures in Travel & Code
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
@@ -82,12 +82,12 @@ export default useFetch;`,
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/travel">
-                <Button size="lg" variant="secondary" className="text-primary">
+                <Button size="lg" variant="secondary" className="bg-white/10 backdrop-blur-sm text-white hover:bg-white/20">
                   Explore Photos
                 </Button>
               </Link>
               <Link to="/code">
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
+                <Button size="lg" variant="outline" className="bg-transparent border-white/40 text-white hover:bg-white/10 backdrop-blur-sm">
                   Browse Code Snippets
                 </Button>
               </Link>
@@ -97,11 +97,11 @@ export default useFetch;`,
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      {/* Featured Profile Image - New Section */}
-      <section className="container mx-auto px-4 py-16">
+      {/* Featured Profile Image */}
+      <section className="container mx-auto px-4 py-16 gradient-bg">
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl font-bold mb-8 text-center">Aarav Garhwal</h2>
-          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
+          <h2 className="text-3xl font-bold mb-8 text-center gradient-heading">Aarav Garhwal</h2>
+          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg border border-white/10">
             <img 
               src="/lovable-uploads/b367f678-09f7-433f-8dab-52a488f5ff8c.png" 
               alt="Aarav Garhwal with headphones" 
@@ -117,7 +117,7 @@ export default useFetch;`,
       {/* Featured Travel Photos */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-3xl font-bold">Featured Travel Photos</h2>
+          <h2 className="text-3xl font-bold gradient-heading">Featured Travel Photos</h2>
           <Link to="/travel" className="text-primary flex items-center hover:underline">
             View all <ArrowRight size={16} className="ml-1" />
           </Link>
@@ -135,9 +135,9 @@ export default useFetch;`,
       </section>
 
       {/* Featured Code Snippets */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-16 gradient-bg rounded-lg">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-3xl font-bold">Featured Code Snippets</h2>
+          <h2 className="text-3xl font-bold gradient-heading">Featured Code Snippets</h2>
           <Link to="/code" className="text-primary flex items-center hover:underline">
             View all <ArrowRight size={16} className="ml-1" />
           </Link>
@@ -157,14 +157,14 @@ export default useFetch;`,
       </section>
 
       {/* CTA Section */}
-      <section className="bg-secondary py-16">
+      <section className="bg-gradient-to-br from-theme-purple/30 via-theme-indigo/20 to-theme-blue/30 py-16 backdrop-blur-sm">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Share Your Own Adventures</h2>
+          <h2 className="text-3xl font-bold mb-4 gradient-heading">Share Your Own Adventures</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Have a great travel photo or useful code snippet? Upload and share it with the community!
           </p>
           <Link to="/upload">
-            <Button size="lg">Upload Content</Button>
+            <Button size="lg" className="bg-gradient-to-r from-theme-blue via-accent to-theme-purple hover:opacity-90">Upload Content</Button>
           </Link>
         </div>
       </section>
