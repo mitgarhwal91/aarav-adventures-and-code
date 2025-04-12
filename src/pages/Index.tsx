@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -12,19 +11,19 @@ const Index = () => {
   const featuredPhotos = [
     {
       id: 1,
-      imageUrl: 'https://source.unsplash.com/photo-1469474968028-56623f02e42e',
+      imageUrl: 'https://source.unsplash.com/random/800x600?mountains',
       title: 'Mountain Sunrise',
       location: 'Himalayas, India'
     },
     {
       id: 2,
-      imageUrl: 'https://source.unsplash.com/photo-1482938289607-e9573fc25ebb',
+      imageUrl: 'https://source.unsplash.com/random/800x600?river',
       title: 'River Valley',
       location: 'Rishikesh, India'
     },
     {
       id: 3,
-      imageUrl: 'https://source.unsplash.com/photo-1470813740244-df37b8c1edcb',
+      imageUrl: 'https://source.unsplash.com/random/800x600?night',
       title: 'Night Sky',
       location: 'Ladakh, India'
     }
@@ -114,7 +113,7 @@ export default useFetch;`,
           <img 
             src="/lovable-uploads/7d17cb9e-1f21-4b07-8657-b82c0f77bf91.jpg" 
             alt="Large featured landscape" 
-            className="w-full object-cover"
+            className="w-full h-[400px] object-cover"
           />
         </div>
       </section>
@@ -177,6 +176,31 @@ export default useFetch;`,
               date={snippet.date}
             />
           ))}
+        </div>
+      </section>
+
+      {/* User Uploaded Content Section */}
+      <section className="container mx-auto px-4 py-16 gradient-bg">
+        <div className="flex flex-col items-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center bg-gradient-to-r from-primary via-accent to-theme-teal bg-clip-text text-transparent drop-shadow">
+            Your Uploaded Content
+          </h2>
+          <p className="text-lg text-center max-w-2xl mx-auto text-white/80 mb-8">
+            See the content you've shared with the community
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="glass-card overflow-hidden rounded-lg">
+            <img 
+              src="/lovable-uploads/7d17cb9e-1f21-4b07-8657-b82c0f77bf91.jpg" 
+              alt="User uploaded content" 
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-2">Your Recent Upload</h3>
+              <p className="text-muted-foreground">Beautiful scenery captured by you</p>
+            </div>
+          </div>
         </div>
       </section>
 
