@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -11,19 +12,19 @@ const Index = () => {
   const featuredPhotos = [
     {
       id: 1,
-      imageUrl: 'https://source.unsplash.com/random/800x600?mountains',
+      imageUrl: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e',
       title: 'Mountain Sunrise',
       location: 'Himalayas, India'
     },
     {
       id: 2,
-      imageUrl: 'https://source.unsplash.com/random/800x600?river',
+      imageUrl: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
       title: 'River Valley',
       location: 'Rishikesh, India'
     },
     {
       id: 3,
-      imageUrl: 'https://source.unsplash.com/random/800x600?night',
+      imageUrl: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb',
       title: 'Night Sky',
       location: 'Ladakh, India'
     }

@@ -12,37 +12,37 @@ const Travel = () => {
   const travelPhotos = [
     {
       id: 1,
-      imageUrl: 'https://source.unsplash.com/photo-1469474968028-56623f02e42e',
+      imageUrl: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e',
       title: 'Mountain Sunrise',
       location: 'Himalayas, India'
     },
     {
       id: 2,
-      imageUrl: 'https://source.unsplash.com/photo-1482938289607-e9573fc25ebb',
+      imageUrl: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
       title: 'River Valley',
       location: 'Rishikesh, India'
     },
     {
       id: 3,
-      imageUrl: 'https://source.unsplash.com/photo-1470813740244-df37b8c1edcb',
+      imageUrl: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb',
       title: 'Night Sky',
       location: 'Ladakh, India'
     },
     {
       id: 4,
-      imageUrl: 'https://source.unsplash.com/photo-1488590528505-98d2b5aba04b',
+      imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
       title: 'Digital Nomad Setup',
       location: 'Goa, India'
     },
     {
       id: 5,
-      imageUrl: 'https://source.unsplash.com/photo-1461749280684-dccba630e2f6',
+      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
       title: 'Work From Beach',
       location: 'Kerala, India'
     },
     {
       id: 6,
-      imageUrl: 'https://source.unsplash.com/photo-1486312338219-ce68d2c6f44d',
+      imageUrl: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
       title: 'Cafe Coding',
       location: 'Bangalore, India'
     }
