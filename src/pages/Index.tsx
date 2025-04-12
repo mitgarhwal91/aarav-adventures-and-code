@@ -125,11 +125,11 @@ export default useFetch;`,
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent drop-shadow">
             Aarav Garhwal
           </h2>
-          <div className="max-w-xl mx-auto overflow-hidden rounded-lg shadow-2xl border border-white/10">
+          <div className="max-w-md mx-auto overflow-hidden rounded-lg shadow-2xl border border-white/10">
             <img 
               src="/lovable-uploads/b367f678-09f7-433f-8dab-52a488f5ff8c.png" 
               alt="Aarav Garhwal with headphones" 
-              className="w-full max-h-[400px] object-cover"
+              className="w-full h-auto max-h-[500px] object-cover"
             />
           </div>
           <p className="mt-6 text-lg text-center max-w-2xl mx-auto text-white/90">
