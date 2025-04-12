@@ -112,8 +112,8 @@ export default useFetch;`,
         </div>
         <div className="max-w-5xl mx-auto overflow-hidden rounded-lg shadow-2xl border border-white/10">
           <img 
-            src="/lovable-uploads/7d17cb9e-1f21-4b07-8657-b82c0f77bf91.jpg" 
-            alt="Large featured landscape" 
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" 
+            alt="Featured landscape" 
             className="w-full h-[400px] object-cover"
           />
         </div>
