@@ -1,3 +1,4 @@
+Author Name --Amit Garhwal  <br>
 # Welcome to your Lovable project
 
 ## Project info
